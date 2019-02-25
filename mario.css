@@ -1,0 +1,39 @@
+.mainMarioBg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/814007_super-mario-backgrounds_1920x1200_h.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.mario img{
+    position: absolute;
+    bottom:55px;
+    animation-name:mariorun;
+    animation-duration: 6s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+     
+}
+@keyframes mariorun{
+    0%{left:0%;}
+    100%{left:88%;}
+}
+.text{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 2em;
+    position: absolute;
+    top:20%;
+    left: 40%;
+    animation: mariotext 4s linear;
+    animation-iteration-count: 5;
+    animation-delay: 1s;
+}
+@keyframes mariotext{
+    0%{font-size: 2em;}
+    100%{font-size: 4em; left:40%;}
+}
